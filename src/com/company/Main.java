@@ -25,85 +25,16 @@ public class Main {
 
         System.out.println(itemprice);
 
-/*
-//_____________________________________________________________________________________________________________________
-        //NUMBERS CLASS
-        double Maryland = 0.06;
-        new StateTaxes();
-        int num1,num2,num3,num4,num5,num6;
-        int item1, item2, item3, item4, item5, item6;
-        double subtotal, tax, totalCost;
-        double firstTotal, secondTotal, thirdTotal, fourthTotal, fifthTotal, sixthTotal, finalTotal;
-
-
-        Scanner scan = new Scanner (System.in);
-
-        NumberFormat fmt1 = NumberFormat.getCurrencyInstance ();
-        NumberFormat fmt2 = NumberFormat.getPercentInstance ();
-//_____________________________________________________________________________________________________________________
-
-
-        //NAME (QUESTION)
-        //Scanner input = new Scanner(System.in);
 
         StateTaxes taxObject = new StateTaxes();
         String state = taxObject.getLocation();
-        double taxRate = taxObject.getTax(location);
+        double taxRate = taxObject.getTax(state);
 
+        System.out.println(taxRate);
 
-        //EMPLOYEE ID
-        Scanner employeeId = new Scanner(System.in);
-
-
-        System.out.print ("Employee ID: ");
-        String value2 = employeeId.nextLine();
-
-        //SIX ITEMS
-        System.out.println ("Select First Item: ");
-        num1 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item1 = scan.nextInt();
-
-        System.out.println ("Select Second Item: ");
-        num2 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item2 = scan.nextInt();
-
-        System.out.println ("Select Third Item: ");
-        num3 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item3 = scan.nextInt();
-
-        System.out.println ("Select Fourth Item: ");
-        num4 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item4 = scan.nextInt();
-
-        System.out.println ("Select Fifth Item: ");
-        num5 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item5 = scan.nextInt();
-
-        System.out.println ("Select Sixth Item: ");
-        num6 = scan.nextInt();
-        System.out.println ("Quantity: ");
-        item6 = scan.nextInt();
-
-
-
-        firstTotal = num1 * item1;
-        secondTotal = num2 * item2;
-        thirdTotal = num3 * item3;
-        fourthTotal = num4 * item4;
-        fifthTotal = num5 * item5;
-        sixthTotal = num6 * item6;
-
-
-        subtotal = (firstTotal + secondTotal + thirdTotal + fourthTotal + fifthTotal + sixthTotal);
-        tax = subtotal * Maryland;
-        totalCost = subtotal + tax;
-
-
+        itemprice += itemprice*taxRate;
+        System.out.println("Your total is:  " + itemprice);
+/*
 //_____________________________________________________________________________________________________________________
         //OUTPUT
         System.out.println ("\n" + line2);
