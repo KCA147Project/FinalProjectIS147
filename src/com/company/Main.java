@@ -20,9 +20,12 @@ public class Main {
         //ARRAY ITEM PRICE CLASS
 
         //ArrayList<String>itemPrice = new ArrayList();
-        double [] itemprice = Price.itemPrice();
+        itemPrice thePrice = new itemPrice();
+        double itemprice = thePrice.getItemPrice(item_id);
 
+        System.out.println(itemprice);
 
+/*
 //_____________________________________________________________________________________________________________________
         //NUMBERS CLASS
         double Maryland = 0.06;
@@ -101,15 +104,6 @@ public class Main {
         totalCost = subtotal + tax;
 
 
-
-
-
-
-
-
-
-
-
 //_____________________________________________________________________________________________________________________
         //OUTPUT
         System.out.println ("\n" + line2);
@@ -135,11 +129,6 @@ public class Main {
         System.out.println(sixthTotal + "  " + item6);
 
 
-
-
-
-
-
         System.out.println ("SUBTOTAL:         " + fmt1.format (subtotal)); //SUBTOTAL
 
         System.out.println ("TAX:          " + fmt1.format (tax)); //TAX PAID
@@ -150,7 +139,7 @@ public class Main {
 
         System.out.println(itemList.get(0) + "       " + fmt1.format(itemprice[0]));
         System.out.println(itemList.get(18) + "       " + fmt1.format(itemprice[18]));
-
+*/
     }
 }
 
