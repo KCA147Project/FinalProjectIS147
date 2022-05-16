@@ -3,6 +3,7 @@ package com.company;
 import java.util.*;
 
 interface taxRate{
+
     public String getLocation();
     public double getTax(String locationName);
 }

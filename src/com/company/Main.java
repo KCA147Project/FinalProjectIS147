@@ -33,6 +33,7 @@ public class Main {
         System.out.println(taxRate);
 
         itemprice += itemprice*taxRate;
+
         System.out.println("Your total is:  " + itemprice);
 /*
 //_____________________________________________________________________________________________________________________
